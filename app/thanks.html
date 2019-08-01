@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Marketing Technology</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div id="mobile-menu">
+	<div class="container">
+		<h3 class="title">Агенство по комплексному построению маркетинга
+						  в компаниях со всего мира</h3>
+
+		<div class="box-address">
+			<p>Офис г. Москва,</p>
+			<span>ул. Пионерская 67, офис 43</span>
+		</div>
+
+		<a href="tel:+7 (495) 123-45-67" class="phone">
+			+7 (495) <span class="text-accent">123-45-67</span>
+		</a>
+
+		<a href="#modal_callback" class="btn-accent btn open_modal">Заказать звонок</a>
+	</div>
+</div>
+
+<header>
+	<div class="container">
+		<a href="index.html" class="logo">
+			<img src="img/logo.png" alt="">
+		</a>
+
+		<div class="box-address">
+			<p>Офис г. Москва,</p>
+			<span>ул. Пионерская 67, офис 43</span>
+		</div>
+
+		<a href="tel:+7 (495) 123-45-67" class="phone">
+			+7 (495) <span class="text-accent">123-45-67</span>
+		</a>
+
+		<a href="#modal_callback" class="btn-border btn open_modal">Заказать звонок</a>
+
+		<a href="#" class="btn-burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+	</div>
+</header>
+
+<section class="thanks">
+	<div class="container">
+		<h2>Спасибо за заявку. <br>
+			Менеджер перезвонит вам в течение 15 минут.</h2>
+
+		<a href="index.html" class="btn btn-accent">Вернуться на главную</a>
+	</div>
+</section>
+
+
+
+<footer>
+	<div class="container">
+		<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+		<a href="tel:+7 (495) 123-45-67" class="phone">+7 (495) <span class="text-accent">123-45-67</span></a>
+	</div>
+</footer>
+
+<div class="modal__div" id="modal_callback">
+	<div class="modal__wrapper">
+		<h2>Закажите обратный звонок</h2>
+		<p>Мы перезвоним в течение 15 минут</p>
+		<form method="post" class="form">
+			<label><input type="text" name="name" placeholder="Введите имя"></label>
+			<label><input type="text" name="phone" placeholder="Введите номер телефона*" required></label>
+			<button type="submit" class="btn-accent btn">Заказать звонок</button>
+
+			<label class="checkbox">
+				<input class="checkbox-inp" type="checkbox" name="checkbox">
+				<span class="checkbox-custom"></span>
+				<span class="label">Вы соглашаетесь с условиями обработки персональных данных <a href="personal.html"
+																								 class="links text-accent" target="_blank">(ознакомиться)</a></span>
+			</label>
+		</form>
+	</div>
+</div>
+<div class="overlay"></div><!-- Пoдлoжкa -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

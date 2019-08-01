@@ -1,0 +1,578 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  transition: .3s ease
+  outline: none
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+button
+  outline: none
+  border: none
+    radius: 0
+  box-shadow: none
+  box-sizing: border-box
+  cursor: pointer
+  &:hover, &:focus
+    outline: none
+
+input, textarea
+  width: 100%
+  box-sizing: border-box
+  outline: none
+  box-shadow: none
+  border: none
+  font-family: $default-font
+  font-size: 16px
+  color: #a4a4a4
+  padding: 0 31px
+  &::placeholder
+    color: #a4a4a4
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  .icon
+    display: flex
+    align-items: center
+    justify-content: center
+
+.btn-border
+  width: 165px
+  height: 50px
+  border-radius: 10px
+  border: 2px solid #d9d9d9
+  color: #fff
+  background: transparent
+  &:hover
+    background-color: $hover
+    border-color: $hover
+    color: #ffffff
+  &:focus
+    background-color: $focus
+    color: #fff
+    border-color: $focus
+
+.btn-accent
+  width: 359px
+  height: 80px
+  border-radius: 10px
+  background-color: $accent
+  color: #fff
+  justify-content: space-between
+  font-size: 20px
+  padding: 0 20px
+  &:hover
+    background-color: $hover
+    color: #ffffff
+  &:focus
+    background-color: $focus
+    color: #fff
+
+.container
+  width: 100%
+  max-width: 1170px
+  padding: 0 15px
+  position: relative
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+
+.logo
+  width: 183px
+
+.text-accent
+  color: $accent
+
+.phone
+  color: #a4a4a4
+  font-size: 16px
+  display: flex
+  align-items: center
+  span
+    font-size: 18px
+    font-weight: 700
+    margin: 0 0 0 5px
+
+//header
+header
+  background-color: #2e2e2e
+  padding: 14px 0
+  color: #fff
+  .container
+    justify-content: space-between
+    align-items: center
+
+.box-address
+  font-size: 18px
+  font-weight: 700
+  line-height: 20px
+  p
+    color: #a4a4a4
+    font-weight: normal
+    font-size: 16px
+
+
+//main
+main
+  background-color: #2e2e2e
+  color: #fff
+  padding: 100px 0 57px
+  h5
+    color: #a4a4a4
+    font-size: 14px
+    max-width: 166px
+    line-height: 18px
+    margin: 0 0 218px
+  .btn
+    .icon
+      width: 9px
+      height: 16px
+
+.main-left
+  width: 400px
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  .image
+    position: absolute
+    width: 709px
+    height: 709px
+    bottom: -32px
+    right: -55%
+
+
+
+.main-right
+  position: relative
+  z-index: 1
+  width: calc(100% - 400px)
+  .image
+    display: none
+  p
+    color: #fefefe
+    font-size: 24px
+    line-height: 30px
+    margin: 89px 0 41px
+    max-width: 555px
+
+.number
+  display: flex
+  flex-direction: column
+  align-items: center
+  color: #4e4e4e
+  font-size: 48px
+  font-weight: 700
+  line-height: 40px
+  span
+    font-size: 30px
+    color: #393939
+    line-height: 30px
+  .line
+    background-color: #4e4e4e
+    width: 1px
+    height: 130px
+    margin: 9px 0 11px
+
+h1
+  font-size: 40px
+  font-weight: 700
+  color: #ffffff
+  line-height: 45px
+
+h2
+  font-size: 30px
+  font-weight: 700
+  color: #333
+  margin: 0 0 29px
+
+
+svg
+  width: 100%
+  height: 100%
+  display: inline-block
+
+.list-package
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+  li
+    margin: 0 0 32px
+    width: 161px
+    display: flex
+    flex-direction: column
+    align-items: center
+    .icon
+      width: 65px
+    p
+      text-align: center
+      margin: 23px auto 0 0
+      color: #333333
+      font-size: 18px
+      line-height: 24px
+
+
+//section-two
+.section-two
+  padding: 99px 0 0
+  position: relative
+  .seo
+    position: relative
+    .bg-image
+      position: absolute
+      z-index: 2
+      right: -171px
+      bottom: -55px
+      width: 809px
+  .text
+    max-width: 677px
+  h5
+    color: #333333
+    font-size: 24px
+    font-weight: 700
+    margin: 0 0 45px
+
+.callback-wrapper
+  background-color: #eceff4
+  position: relative
+  display: flex
+  //justify-content: space-between
+  //flex-wrap: wrap
+  //align-items: stretch
+  .container
+    justify-content: space-between
+  h3
+    margin: 65px 0 42px
+    font-size: 18px
+    color: #333
+  .form
+    margin: 0 0 67px
+
+
+
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: flex-start
+  margin: 29px 0 0 0
+  a
+    display: inline
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 12px
+    min-width: 12px
+    height: 12px
+    display: inline-block
+    vertical-align: middle
+
+    cursor: pointer
+    transition: .3s ease
+    box-sizing: border-box
+    margin: 0 14px 0 0
+    background: url("../img/checked.svg") no-repeat center
+      size: contain
+  .label
+    display: inline-block
+    vertical-align: middle
+    cursor: pointer
+    font-size: 14px
+    color: #a4a4a4
+    line-height: 18px
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      width: 12px
+      height: 12px
+      border: 1px solid $accent
+      background: #eceff4
+
+.number-wrapper
+  width: 35%
+  height: 100%
+  background: #fff
+  padding: 90px 0 30px
+  position: absolute
+  right: 0
+  bottom: 0
+  .number
+    p
+      font-size: 48px
+      color: #d3d8e0
+    span
+      color: #e3e6ec
+      font-size: 30px
+    .line
+      height: 105px
+      background-color: #d3d8e0
+
+
+.form
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  max-width: 652px
+  label
+    width: 389px
+    input
+      height: 50px
+      border-radius: 10px 0 0 10px
+  button
+    width: 263px
+    border-radius: 0 10px 10px 0
+    height: 50px
+    font-size: 16px
+    padding: 0
+    text-align: center
+    justify-content: center
+
+footer
+  background-color: #2e2e2e
+  padding: 18px 0
+  .container
+    justify-content: space-between
+    align-items: center
+
+
+.btn-burger
+  width: 22px
+  cursor: pointer
+  display: none
+  span
+    transition: .3s ease
+    display: block
+    height: 2px
+    background: #fff
+    margin: 0 0 5px auto
+    &:nth-child(2)
+      width: 18px
+    &:nth-child(3)
+      margin: 0 0 0 auto
+      width: 14px
+  &:hover
+    span
+      background: #697de4
+  &:focus
+    span
+      background: #4646d1
+
+.modal__div
+  position: fixed
+  width: 470px
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+  .modal__wrapper
+    background-color: #eceff4
+    border-radius: 10px
+    width: 100%
+    height: auto
+    overflow: auto
+    margin: 50px auto
+    padding: 40px
+    box-sizing: border-box
+    position: relative
+    h2
+      margin: 0 0 22px
+      font-size: 24px
+      color: #333
+      font-weight: 700
+      text-align: left
+    p
+      color: #333333
+      font-size: 18px
+      margin: 0 0 49px
+  .form
+    flex-direction: column
+    align-items: flex-start
+    width: 100%
+    max-width: none
+    .checkbox
+      margin: 24px 0 0 0
+    label
+      margin: 0 0 20px
+      width: 100%
+    input
+      border-radius: 10px
+    button
+      border-radius: 10px
+      margin: 5px 0 0
+      width: 165px
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.6
+  -moz-opacity: 0.6
+  filter: alpha(opacity = 60)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+#mobile-menu
+  background: #fff
+  position: absolute
+  left: 0
+  top: 60px
+  z-index: 5
+  width: 100%
+  padding: 31px 0 34px
+  display: none
+  .container
+    flex-direction: column
+    align-items: center
+  .title
+    text-align: center
+    color: #333333
+    font-size: 16px
+    line-height: 20px
+    max-width: 190px
+    margin: 0 auto
+  .box-address
+    margin: 20px 0
+    justify-content: center
+    text-align: center
+    font-size: 16px
+    color: #333333
+    p
+      color: #333333
+  .phone
+    color: #333333
+  .btn
+    margin: 30px auto 0
+    justify-content: center
+    padding: 0
+    width: 165px
+    height: 50px
+    font-size: 16px
+
+
+//thanks
+.thanks
+  background: url("../img/bg2.jpg") no-repeat center
+    size: cover
+  padding: 302px 0 311px
+  .btn
+    width: 290px
+    padding: 0
+    height: 50px
+    text-align: center
+    justify-content: center
+    margin: 36px auto 0
+    display: none
+  h2
+    font-size: 30px
+    color: #fff
+    width: 100%
+    text-align: center
+
+
+
+@import "media"
+// Всегда в конце
